@@ -1,19 +1,4 @@
-<<<<<<< HEAD
-version: '3.8'
 
-services:
-  n8n:
-    image: docker.n8n.io/n8nio/n8n
-    container_name: n8n
-    restart: unless-stopped
-    ports:
-      - '5678:5678'
-    volumes:
-      - /var/images/n8n:/home/node/.n8n
-    environment:
-
-      - N8N_SECURE_COOKIE=false 
-=======
 services:
   n8n:
     image: n8nio/n8n:latest
@@ -27,7 +12,8 @@ services:
       - N8N_HOST=0.0.0.0
       - N8N_PORT=5678
       - NODE_ENV=production
+      - N8N_SECURE_COOKIE=false 
     volumes:
       - ./n8n_data:/home/node/.n8n
     restart: always
->>>>>>> 5416a4e059636ca03a9e520ba6822aed0fb311ef
+
