@@ -1,0 +1,44 @@
+{
+  "type": "function",
+  "function": {
+    "name": "create_apresentation",
+    "description": "Gera apresentações estruturadas e detalhadas sobre sistemas, cobrindo introdução, arquitetura, funcionalidades, usabilidade, benefícios, segurança, validação, conclusão e perguntas. Inclui também uma visão modular do sistema, funcionalidades por sessão e níveis de usuário.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "introducao": {
+          "type": "string",
+          "description": "Introdução sobre o objetivo"
+        },
+        "visaoGeralSistema": {
+          "type": "string",
+          "description": "Visão geral técnica e estrutural do sistema"
+        },
+        "modulosSistema": {
+          "type": "string",
+          "description": "Detalhamento das sessões/módulos do sistema, com funcionalidades e níveis de acesso"
+        },
+        "funcionalidades": {
+          "type": "string",
+          "description": "Funcionalidades principais e demonstração geral do sistema"
+        },
+        "usabilidadeUX": {
+          "type": "string",
+          "description": "Informações sobre a experiência do usuário e navegação"
+        },
+        "conclusaoProximosPassos": {
+          "type": "string",
+          "description": "Resumo dos pontos-chave e próximos passos planejados"
+        }
+      },
+      "required": [
+        "introducao",
+        "visaoGeralSistema",
+        "modulosSistema",
+        "funcionalidades",
+        "usabilidadeUX",
+        "conclusaoProximosPassos"
+      ]
+    }
+  }
+}
