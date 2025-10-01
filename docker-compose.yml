@@ -15,6 +15,6 @@ services:
       - N8N_SECURE_COOKIE=false 
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
     volumes:
-      - /var/images/n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n
+      - /var/images/n8n:/home/node/.n8n
     restart: always
 
