@@ -13,7 +13,8 @@ services:
       - N8N_PORT=5678
       - NODE_ENV=production
       - N8N_SECURE_COOKIE=false 
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
     volumes:
-      - ./n8n_data:/home/node/.n8n
+      - /var/images/n8n:/home/node/.n8n docker.n8n.io/n8nio/n8n
     restart: always
 
