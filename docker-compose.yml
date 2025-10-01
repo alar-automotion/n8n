@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '3.8'
 
 services:
@@ -12,3 +13,21 @@ services:
     environment:
 
       - N8N_SECURE_COOKIE=false 
+=======
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    network_mode: "host"   # usa a rede do host
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=admin123
+      - N8N_USER_MANAGEMENT_DISABLED=false
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - NODE_ENV=production
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+    restart: always
+>>>>>>> 5416a4e059636ca03a9e520ba6822aed0fb311ef
